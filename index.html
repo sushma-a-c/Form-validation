@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>User Signup</title>
+    <link rel="stylesheet" href="./style.css">
+    
+</head>
+<body>
+   
+        
+
+<form name="Form" onsubmit="return validateForm()" >
+    <h2>New User Signup</h2>
+    <div class="box">
+        <input type="text" name="name" id="name" placeholder="FirstName">
+        <div class="error" id="nameErr"></div>
+    </div>
+    <div class="box">
+        <input type="text" name="uname" id="uname" placeholder="UserName">
+        <div class="error" id="unameErr"></div>
+    </div>
+    <div class="box">
+        <input type="text" name="email" id="email" placeholder="Email">
+        <div class="error" id="emailErr"></div>
+    </div>
+    <div class="box">
+        <input type="password" name="password" placeholder="Password" id="password" />
+        <div class="error" id="passwordErr"></div>
+    </div>
+    
+    <div class="box">
+        <input type="text" name="mobile" maxlength="10" id="mobile" placeholder="Telephone">
+        <div class="error" id="mobileErr"></div>
+    </div>
+
+    <div class="box">
+        <input type="text" name="pancard" maxlength="11" id="pancard" placeholder="Pancard">
+        <div class="error" id="pancardErr"></div>
+    </div>
+        
+    <div class="box">
+        <input type="submit" value="Submit">
+    </div>
+</form>
+<script src="./script.js"></script>
+</body>
+</html>
